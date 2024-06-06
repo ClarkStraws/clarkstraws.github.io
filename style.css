@@ -1,0 +1,113 @@
+body {
+  background-color: black;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-image: radial-gradient(
+    circle at 2px 2px,
+    white 2px,
+    transparent 0
+  );
+  background-size: 30px 30px;
+}
+
+.main {
+  position: absolute;
+  margin-top: 5%;
+  margin-left: 15%;
+  width: 70%;
+}
+
+.content-box {
+  font-family: "Noto Sans Mono", monospace;
+  color: white;
+  position: relative;
+  background-color: black;
+  border: 1px white solid;
+  z-index: 10;
+  margin-bottom: 75px;
+  display: flex;
+  justify-content: center;
+  /* clip-path: polygon(0 0, 95% 0%, 100% 25%, 100% 100%, 50% 100%, 25% 100%, 10% 100%, 0% 85%); */
+  flex-direction: column;
+}
+
+.nav-box {
+  font-family: "Noto Sans Mono", monospace;
+  color: white;
+  position: relative;
+  background-color: black;
+  border: 1px white solid;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  /* clip-path: polygon(0 0, 95% 0%, 100% 25%, 100% 100%, 50% 100%, 25% 100%, 10% 100%, 0% 85%); */
+}
+
+.divider {
+  height: 5px;
+  border-bottom: 1px dotted;
+}
+
+.content {
+  font-family: "Noto Sans Mono", monospace;
+  color: white;
+  position: relative;
+  width: 95%;
+  height: 80%;
+  background-color: black;
+  border: 1px white solid;
+  z-index: 10;
+  align-self: center;
+  overflow: auto;
+}
+
+.content-title {
+  font-family: "Noto Sans Mono", monospace;
+  font-size: 25px;
+  border-bottom: 1px dotted;
+}
+
+.content-body {
+  margin: 25px;
+}
+
+a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:visited {
+  color: gray;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:hover {
+  color: #FF582A;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  flex-direction: row;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #FF582A;
+  color: black;
+}

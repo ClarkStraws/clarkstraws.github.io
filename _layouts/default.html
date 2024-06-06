@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% include header.html %}
+  <body>
+    <div class="main" id="main">
+      <div class="content-box">
+        <div class="content">
+          <div class="content-title">>>>Welcome to the Laboratory</div>
+          <div class="content-body">This is my portfolio website!</div>
+          <div class="divider"></div>
+          <div class="content-title">>>>Enter the Creatures</div>
+          <div class="content-body">
+            My emporium of home-grown creatures and dangerous experiments can be
+            found here.
+          </div>
+          {% for post in site.posts %}
+          <div class="divider"></div>
+          <div class="content-body">
+            <a href="{{post.url}}">{{post.title}}</a>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
