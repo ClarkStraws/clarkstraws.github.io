@@ -25,18 +25,35 @@
           {% for post in site.posts %}
           <div class="divider"></div>
           <div class="content-body">
-            <span style="color: gray">LOG:</span>
-            <a style="font-size: 20px" href="{{post.url}}">{{post.title}}</a>
-            <div style="font-size: 14px; color: gray">
-              DATE: {{post.date | date: "%B %-d, %Y" }}
+          <div>
+              <div
+                style="
+                  display: flex;
+                  flex-direction: row;
+                  justify-content: space-between;
+                "
+              >
+                <span style="color: gray"
+                  >LOG:
+                  <a style="font-size: 20px" href="{{post.url}}"
+                    >{{post.title}}</a
+                  ></span
+                >
+
+                <div style="font-size: 14px; color: gray">
+                  DATE: {{post.date | date: "%B %-d, %Y" }}
+                </div>
+              </div>
+
+              <div style="font-size: 14px; color: gray">
+                AUTHOR: {{post.author}}
+              </div>
+              <div style="font-size: 14px; color: white">
+                {{post.description}}
+              </div>
             </div>
-            <div style="font-size: 14px; color: gray">
-              AUTHOR: {{post.author}}
-            </div>
-            <div style="font-size: 14px; color: white">
-              {{post.description}}
-            </div>
-          </div>
+          </div> 
+
           {% endfor %}
         </div>
       </div>
