@@ -14,6 +14,7 @@ body {
   position: absolute;
   margin-top: 5%;
   margin-left: 15%;
+  margin-right: 15%;
   width: 70%;
 }
 
@@ -111,6 +112,16 @@ li a:hover {
   background-color: #FF582A;
   color: black;
 }
+
+.thumbnail {
+  width: 25%;
+  height: 25%;
+  border: dotted 3px white;
+}
+
+
+
+
 
 .loader {
   width: fit-content;

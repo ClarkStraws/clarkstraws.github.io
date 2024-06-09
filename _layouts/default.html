@@ -1,24 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-    {% include header.html %}
+  {% include header.html %}
   <body>
     <div class="main" id="main">
+      <div class="nav-box">
+        <ul>
+          <li><a href="https://github.com/ClarkStraws">Github</a></li>
+          <li>
+            <a href="https://www.linkedin.com/in/henry-haner-873040299/"
+              >LinkedIn</a
+            >
+          </li>
+          <li><a href="https://latentarcana.com/">Latent Arcana</a></li>
+        </ul>
+      </div>
       <div class="content-box">
         <div class="content">
           <div class="content-title">>>>Welcome to the Laboratory</div>
-          <div class="content-body">This is my portfolio website!</div>
-          <div class="divider"></div>
-          <div class="content-title">>>>Enter the Creatures</div>
           <div class="content-body">
-            My emporium of home-grown creatures and dangerous experiments can be
-            found here.
+            The Latent Arcanist's emporium of home-grown creatures and dangerous
+            experiments can be found here.
           </div>
+          <div class="content-body"></div>
           {% for post in site.posts %}
           <div class="divider"></div>
           <div class="content-body">
-            <span style="color: gray;">LOG:</span> <a style="font-size: 20px; "href="{{post.url}}">{{post.title}}</a>
-            <div style="font-size: 14px; color: gray;">DATE: {{post.date | date: "%B %-d, %Y" }}</div>
-            <div style="font-size: 14px; color: gray;">AUTHOR: {{post.author}}</div>
+            <span style="color: gray">LOG:</span>
+            <a style="font-size: 20px" href="{{post.url}}">{{post.title}}</a>
+            <div style="font-size: 14px; color: gray">
+              DATE: {{post.date | date: "%B %-d, %Y" }}
+            </div>
+            <div style="font-size: 14px; color: gray">
+              AUTHOR: {{post.author}}
+            </div>
+            <div style="font-size: 14px; color: white">
+              {{post.description}}
+            </div>
           </div>
           {% endfor %}
         </div>

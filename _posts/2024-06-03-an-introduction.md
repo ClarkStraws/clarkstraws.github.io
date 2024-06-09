@@ -2,6 +2,8 @@
 layout: post
 title:  "greeting.exe"
 author: "Henry"
+description: A greeting from Henry Haner, the creator of this site and many other passion projects!
+
 ---
 ### download greeting.exe [Y/N] ... Y
 
