@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <html lang="en">
   {% include header.html %}
   <body>
@@ -25,34 +26,33 @@
           {% for post in site.posts %}
           <div class="divider"></div>
           <div class="content-body">
-          <div>
-              <div
-                style="
-                  display: flex;
-                  flex-direction: row;
-                  justify-content: space-between;
-                "
-              >
-                <span style="color: gray"
-                  >LOG:
-                  <a style="font-size: 20px" href="{{post.url}}"
-                    >{{post.title}}</a
-                  ></span
-                >
-
-                <div style="font-size: 14px; color: gray">
-                  DATE: {{post.date | date: "%B %-d, %Y" }}
+            <div>
+              <div>
+                <div style="display: flex; flex-direction: column; align-items: center;">
+                  <div>
+                    <img src="{{post.thumbnail}}" />
+                  </div>
+                  <div style="font-size: 14px; color: gray">
+                    >LOG:
+                    <a style="font-size: 20px" href="{{post.url}}"
+                      >{{post.title}}</a
+                    >
+                  </div>
+                </div>
+                <div style="display: flex; flex-direction: column;">
+                  <div style="font-size: 14px; color: gray">
+                    AUTHOR: {{post.author}}
+                  </div>
+                  <div style="font-size: 14px; color: white">
+                    {{post.description}}
+                  </div>
+                  <div style="font-size: 14px; color: gray">
+                    DATE: {{post.date | date: "%B %-d, %Y" }}
+                  </div>
                 </div>
               </div>
-
-              <div style="font-size: 14px; color: gray">
-                AUTHOR: {{post.author}}
-              </div>
-              <div style="font-size: 14px; color: white">
-                {{post.description}}
-              </div>
             </div>
-          </div> 
+          </div>
 
           {% endfor %}
         </div>

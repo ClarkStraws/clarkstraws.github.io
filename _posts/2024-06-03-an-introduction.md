@@ -3,6 +3,7 @@ layout: post
 title:  "greeting.exe"
 author: "Henry"
 description: A greeting from Henry Haner, the creator of this site and many other passion projects!
+thumbnail: "/assets/introduction-assets/latent-arcanist.png"
 ---
 ### download greeting.exe [Y/N] ... Y
 
@@ -12,7 +13,7 @@ Hey there! Welcome to my portfolio site! My real name is Henry Haner but my psue
 
 I'm trying to get better about having an online presence so I've made this site to start documenting my work more thoroughly.
 
-### running introduction.bat ...
+### running introduction.sh ...
 Whether you're coming from one of my social media accounts, Github, or even a job application (hello present/future employer, have I mentioned you look nice today?), I think it's best if I give a quick overview of who I am and what I do.
 
 By day, I'm a data engineer at a large healthcare organization. I enjoy the people I work with and the work I do, but I also absolutely love programming and playing around with technology so I always have something I'm toying with for fun at home. I started a company with a few of my friends so that we could build games and software, and I called it Latent Arcana Games.

@@ -68,6 +68,7 @@ body {
   border-bottom: 1px dotted;
 }
 
+
 .content-body {
   margin: 25px;
 }
@@ -83,7 +84,7 @@ a:visited {
   text-decoration: underline;
 }
 a:hover {
-  color: #FF582A;
+  color: #ff582a;
   background-color: transparent;
   text-decoration: underline;
 }
@@ -109,7 +110,7 @@ li a {
 }
 
 li a:hover {
-  background-color: #FF582A;
+  background-color: #ff582a;
   color: black;
 }
 
@@ -120,8 +121,15 @@ li a:hover {
 }
 
 
-
-
+.scroller {
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: fit-content;
+  white-space: nowrap;
+  animation: loop 30s linear infinite;
+}
 
 .loader {
   width: fit-content;
@@ -134,12 +142,33 @@ li a:hover {
   overflow: hidden;
 }
 .loader:before {
-  content:"Loading...\AgodnLai...\Aoiaglni...\ALiongad...\Agindola...\Analoidg...";
+  content: "Loading...\AgodnLai...\Aoiaglni...\ALiongad...\Agindola...\Analoidg...";
   white-space: pre;
-  display:inline-block;
+  display: inline-block;
   animation: l38 1s infinite steps(6);
 }
 
 @keyframes l38 {
-  100%{transform: translateY(-100%)}
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes loop {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .main {
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+  }
 }
